@@ -1,0 +1,151 @@
+.lista-departamentos {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.departamento-item {
+  position: relative;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: white;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.departamento-item:hover {
+  background-color: #e9ecef;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.edit-container {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.departamento-nome {
+  flex-grow: 1;
+  font-size: 16px;
+  padding: 8px 0;
+}
+
+.botoes-acao {
+  display: flex;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.departamento-item:hover .botoes-acao {
+  opacity: 1;
+}
+
+.edit-input {
+  flex-grow: 1;
+  padding: 8px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.editar-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.excluir-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.confirmar-btn {
+  background-color: #2196F3;
+  color: white;
+}
+
+button:hover {
+  filter: brightness(0.9);
+  transform: scale(0.98);
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+.error {
+  color: #dc3545;
+  padding: 20px;
+  border: 1px solid #dc3545;
+  border-radius: 4px;
+  margin: 20px;
+  text-align: center;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  transform: none;
+  filter: none;
+}
+
+.form-criacao {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-criacao input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.criar-btn {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  padding: 0px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.criar-btn:disabled {
+  background-color: #90caf9;
+  cursor: not-allowed;
+}
+
+.criar-btn:hover:not(:disabled) {
+  background-color: #1976d2;
+}

@@ -1,0 +1,81 @@
+.team-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.team-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.team-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s;
+  position: relative;
+}
+
+.team-item:hover {
+  transform: translateY(-2px);
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.actions.visible {
+  opacity: 1;
+}
+
+.edit-btn, .delete-btn {
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.edit-btn:hover {
+  color: #4CAF50;
+}
+
+.delete-btn:hover {
+  color: #f44336;
+}
+
+.add-button {
+  margin-top: 20px;
+  background-color: #2196F3;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-button:hover {
+  background-color: #1976D2;
+}
